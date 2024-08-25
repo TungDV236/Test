@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Cong Viec\\Data\\Project\\Visual\\Example\\",
+  "WorkspaceRootPath": "E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|e:\\cong viec\\data\\project\\visual\\example\\example\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|solutionrelative:example\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|E:\\Cong Viec\\Data\\Project\\Visual\\Example\\example\\class\\data_history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\example\\class\\data_history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|solutionrelative:example\\class\\data_history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|E:\\Cong Viec\\Data\\Project\\Visual\\Example\\example\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|e:\\cong viec\\sti\\github\\test\\test\\test\\example\\example\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|solutionrelative:example\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\example\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|solutionrelative:example\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|E:\\Cong Viec\\Data\\Project\\Visual\\Example\\example\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\example\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|solutionrelative:example\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|E:\\Cong Viec\\Data\\Project\\Visual\\Example\\example\\class\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\example\\class\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27FF8979-7284-409E-B235-26CBA666B003}|Example\\Example.csproj|solutionrelative:example\\class\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,15 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 486,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "App.config",
-              "DocumentMoniker": "E:\\Cong Viec\\Data\\Project\\Visual\\Example\\Example\\App.config",
+              "DocumentMoniker": "E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\Example\\App.config",
               "RelativeDocumentMoniker": "Example\\App.config",
-              "ToolTip": "E:\\Cong Viec\\Data\\Project\\Visual\\Example\\Example\\App.config",
+              "ToolTip": "E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\Example\\App.config",
               "RelativeToolTip": "Example\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -46,23 +46,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Data_History.cs",
-              "DocumentMoniker": "E:\\Cong Viec\\Data\\Project\\Visual\\Example\\Example\\Class\\Data_History.cs",
+              "DocumentMoniker": "E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\Example\\Class\\Data_History.cs",
               "RelativeDocumentMoniker": "Example\\Class\\Data_History.cs",
-              "ToolTip": "E:\\Cong Viec\\Data\\Project\\Visual\\Example\\Example\\Class\\Data_History.cs",
+              "ToolTip": "E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\Example\\Class\\Data_History.cs",
               "RelativeToolTip": "Example\\Class\\Data_History.cs",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAmwMQAAAAAAAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAmwGsAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T15:16:51.238Z"
+              "WhenOpened": "2024-08-25T15:16:51.238Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Data.cs",
-              "DocumentMoniker": "E:\\Cong Viec\\Data\\Project\\Visual\\Example\\Example\\Class\\Data.cs",
+              "DocumentMoniker": "E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\Example\\Class\\Data.cs",
               "RelativeDocumentMoniker": "Example\\Class\\Data.cs",
-              "ToolTip": "E:\\Cong Viec\\Data\\Project\\Visual\\Example\\Example\\Class\\Data.cs",
+              "ToolTip": "E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\Example\\Class\\Data.cs",
               "RelativeToolTip": "Example\\Class\\Data.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -72,21 +73,21 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "E:\\Cong Viec\\Data\\Project\\Visual\\Example\\Example\\MainWindow.xaml",
+              "DocumentMoniker": "E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\Example\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Example\\MainWindow.xaml",
-              "ToolTip": "E:\\Cong Viec\\Data\\Project\\Visual\\Example\\Example\\MainWindow.xaml",
+              "ToolTip": "E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\Example\\MainWindow.xaml",
               "RelativeToolTip": "Example\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-08-25T15:07:08.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "E:\\Cong Viec\\Data\\Project\\Visual\\Example\\Example\\MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\Example\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Example\\MainWindow.xaml.cs",
-              "ToolTip": "E:\\Cong Viec\\Data\\Project\\Visual\\Example\\Example\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "Example\\MainWindow.xaml.cs*",
+              "ToolTip": "E:\\Cong Viec\\STI\\Github\\Test\\Test\\Test\\Example\\Example\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Example\\MainWindow.xaml.cs",
               "ViewState": "AQIAAEoAAAAAAAAAAAAwwGgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T15:07:07.931Z",

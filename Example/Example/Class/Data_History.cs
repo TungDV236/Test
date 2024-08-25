@@ -1,13 +1,59 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using System.IO;
+using System.Windows;
+using System.Windows.Controls;
+using IOPath = System.IO.Path;
+using System.Windows.Shapes;
+using System.Windows.Input;
+using System.Windows.Threading;
+using Newtonsoft.Json;
+using System.Windows.Media;
+using System.Text.Json;
+using MaterialDesignThemes.Wpf;
+using Machine_Cut_Via.Class;
+using static MaterialDesignThemes.Wpf.Theme.ToolBar;
+using static Machine_Cut_Via.LoginWindow;
 using System.Windows.Markup;
 using System.Xml.Linq;
 
-namespace Example.Class
+
+namespace Machine_Cut_Via.Class
 {
+
+    public class List_Error
+    {
+        public int STT { get; set; }
+        public string Code { get; set; }
+        public string Content_ { get; set; }
+        public string Solution { get; set; }
+        public string Time { get; set; }
+    }
+
+
+    public class List_Error_temp
+    {
+        public int STT { get; set; }
+        public string Code { get; set; }
+        public string Content_ { get; set; }
+        public string Solution { get; set; }
+        public string Time { get; set; }
+
+    }
+    public class List_Err
+    {
+        public int STT { get; set; }
+        public string Code { get; set; }
+        public string Content_ { get; set; }
+        public string Solution { get; set; }
+        public string Time { get; set; }
+
+    }
     public class History_UL
 
     {
@@ -141,12 +187,74 @@ namespace Example.Class
         public static bool A4F;
 
 
+        private static ushort _value;
+        Link_Path linkpath = new Link_Path();
 
 
 
 
 
+        public ushort Value
+        {
+            get => _value;
+            set
+            {
+                // Kiểm tra xem giá trị đã thay đổi chưa
+                if (_value != value)
+                {
+                    // Tính toán bit đã thay đổi
+                    ushort changedBits = (ushort)(_value ^ value);
+                    OnValueChanged(changedBits);
+                    _value = value;
+                }
+            }
+        }
 
+        public event Action<ushort> ValueChanged;
+
+        protected virtual void OnValueChanged(ushort changedBits)
+        {
+            ValueChanged?.Invoke(changedBits);
+        }
+        public void Main()
+        {
+            var observableWord = new History_UL();
+            string code_E;
+            ushort word;
+            //        
+            // Đăng ký sự kiện
+            observableWord.ValueChanged += changedBits =>
+            {
+                //  Console.WriteLine("Giá trị đã thay đổi!");
+                for (int i = 0; i < 16; i++)
+                {
+                    if ((changedBits & (1 << i)) != 0)
+
+                    {
+                        if ((Value & (1 << i)) != 0) // Giá trị hiện tại của bit
+                        {
+                            //   code_E = Choose_Data(i);
+                            //   Console.WriteLine(" ma loi: " + code_E + "da xu ly");
+                            //   Clear_History(code_E);
+                            // AddErr(code_E);
+                        }
+                        else
+                        {
+
+                            // code_E = Choose_Data(i);
+                            //  Console.WriteLine(" ma loi: " + code_E + "ton tai");
+                            // Save_History(code_E);
+                        }
+
+                    }
+
+
+                }
+            };
+
+            // Thay đổi giá trị
+            observableWord.Value = word;
+        }
         public static string Choose_Data(int i)
         {
             switch (i)
@@ -190,6 +298,91 @@ namespace Example.Class
         }
 
 
+        private void Clear_History(string code_E)
+        {
+
+
+
+            string json = File.ReadAllText(linkpath.Error);
+            var options = new JsonSerializerOptions { ReadCommentHandling = JsonCommentHandling.Skip };
+            var data = System.Text.Json.JsonSerializer.Deserialize<List_Error_temp[]>(json, options);
+
+            var newData = new List<List_Error_temp>();
+
+            foreach (var item in data)
+            {
+                if (item.Code != code_E)
+                {
+                    newData.Add(item);
+                }
+            }
+            var jsonOptions = new JsonSerializerOptions { WriteIndented = true };
+            string newJsonString = System.Text.Json.JsonSerializer.Serialize(newData, jsonOptions);
+            // Write back to file
+            File.WriteAllText(linkpath.Error, newJsonString);
+            //    Common.Load_View_Model(List_History_);
+
+
+        }
+        private void Save_History(string code_E)
+        {
+            //            if (float.Parse(txb_Speed_Step2.Text) >= 3 && float.Parse(txb_Speed_Step2.Text) <= 20)
+            //          {
+            System.DateTime dateTime = System.DateTime.Now;
+            History_Error history_Error = new History_Error();
+            List_Error List_His_Error = new List_Error();
+            string Fill_json = File.ReadAllText(linkpath.History);
+            //   string json_ = File.ReadAllText(linkpath.Error);
+            string json = File.ReadAllText(linkpath.Error);
+            int cnt = 0;
+            if (Fill_json.Length > 0)
+            {
+                JArray json_fillArray = JArray.Parse(Fill_json);
+                foreach (JObject obj in json_fillArray)
+                {
+                    if ((string)obj["Code"] == code_E)
+                    {
+                        List_His_Error.Code = (string)obj["Code"];
+                        List_His_Error.Content_ = (string)obj["Content_"];
+                        List_His_Error.Solution = (string)obj["Solution"];
+                        List_His_Error.Time = dateTime.ToString();
+
+                        string list_History_Json = JsonConvert.SerializeObject(List_His_Error);
+                        // MessageBox.Show("Đã đọc được lỗi");
+                        //   JArray json_Array = JArray.Parse(json);
+                        var options = new JsonSerializerOptions { ReadCommentHandling = JsonCommentHandling.Skip };
+                        var data = System.Text.Json.JsonSerializer.Deserialize<List_Error_temp[]>(json, options);
+                        foreach (var item in data)
+                        {
+                            if (item.Code == code_E)
+                            {
+                                cnt += 1;
+                            }
+                        }
+                        if (cnt == 0)
+                        {
+                            if (json.Length < 50)
+                            {
+
+                                json = json.Remove(json.Length - 1);
+                                json = json + list_History_Json + "]";
+                                File.WriteAllText(linkpath.Error, json);
+                                cnt = 0;
+                            }
+                            else
+                            {
+                                json = json.Remove(json.Length - 1);
+                                json = json + "," + list_History_Json + "]";
+                                File.WriteAllText(linkpath.Error, json);
+                                cnt = 0;
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
 
 
 
