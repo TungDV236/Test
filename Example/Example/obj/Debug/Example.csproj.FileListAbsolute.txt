@@ -1,0 +1,15 @@
+E:\Cong Viec\Data\Project\Visual\Example\Example\bin\Debug\Example.exe.config
+E:\Cong Viec\Data\Project\Visual\Example\Example\bin\Debug\Example.exe
+E:\Cong Viec\Data\Project\Visual\Example\Example\bin\Debug\Example.pdb
+E:\Cong Viec\Data\Project\Visual\Example\Example\obj\Debug\Example.csproj.AssemblyReference.cache
+E:\Cong Viec\Data\Project\Visual\Example\Example\obj\Debug\MainWindow.g.cs
+E:\Cong Viec\Data\Project\Visual\Example\Example\obj\Debug\App.g.cs
+E:\Cong Viec\Data\Project\Visual\Example\Example\obj\Debug\Example_MarkupCompile.cache
+E:\Cong Viec\Data\Project\Visual\Example\Example\obj\Debug\Example_MarkupCompile.lref
+E:\Cong Viec\Data\Project\Visual\Example\Example\obj\Debug\MainWindow.baml
+E:\Cong Viec\Data\Project\Visual\Example\Example\obj\Debug\Example.g.resources
+E:\Cong Viec\Data\Project\Visual\Example\Example\obj\Debug\Example.Properties.Resources.resources
+E:\Cong Viec\Data\Project\Visual\Example\Example\obj\Debug\Example.csproj.GenerateResource.cache
+E:\Cong Viec\Data\Project\Visual\Example\Example\obj\Debug\Example.csproj.CoreCompileInputs.cache
+E:\Cong Viec\Data\Project\Visual\Example\Example\obj\Debug\Example.exe
+E:\Cong Viec\Data\Project\Visual\Example\Example\obj\Debug\Example.pdb
